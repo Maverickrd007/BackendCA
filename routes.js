@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.post("/user",async(req, res)=>{
     try{
-        const(user) = req.body;
+        const user = req.body;
         if(!user){
             return res.status(400).json({message:"User parameter cannot be empty"});
         }
